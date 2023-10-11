@@ -28,6 +28,7 @@ public class Warehouse {
         this.status = status;
     }
 
+
     public long getWarehouseID() {
         return warehouseID;
     }
@@ -60,5 +61,13 @@ public class Warehouse {
         this.status = status;
     }
 
-
+    @Override
+    public String toString() {
+        return "Warehouse{" +
+                "warehouseID=" + warehouseID +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", status=" + status +
+                '}';
+    }
 }
